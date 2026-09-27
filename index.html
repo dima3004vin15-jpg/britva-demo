@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Барбершоп «БРИТВА» — Барбершоп Минск | стрижка от 30 BYN, работаем до 22:00</title>
+<meta name="description" content="Барбершоп Минск — Барбершоп «БРИТВА». Стрижка и борода от 30 BYN. Работаем ежедневно до 22:00 — успеем после работы. Запись за 2 минуты, без звонков. Запись онлайн, ул. Притыцкого, 34 (м. Пушкинская).">
+<meta property="og:title" content="Барбершоп «БРИТВА» — Барбершоп Минск">
+<meta property="og:description" content="Стрижка и борода от 30 BYN. Работаем ежедневно до 22:00 — успеем после работы. Запись за 2 минуты, без звонков.">
+<meta property="og:image" content="og-cover.jpg">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<!-- SEO: LocalBusiness schema (JSON-LD) -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "HairSalon",
+  "name": "Барбершоп «БРИТВА»",
+  "description": "Стрижка и борода от 30 BYN. Работаем ежедневно до 22:00 — успеем после работы. Запись за 2 минуты, без звонков.",
+  "address": {"@type": "PostalAddress", "streetAddress": "ул. Притыцкого, 34", "addressLocality": "Минск", "addressCountry": "BY"},
+  "telephone": "+375 (29) 123-45-67",
+  "openingHours": "Mo-Su 10:00-22:00",
+  "priceRange": "30-75 BYN",
+  "url": "https://britva-demo.vercel.app",
+  "aggregateRating": {"@type": "AggregateRating", "ratingValue": "4.9", "reviewCount": "120"}
+}
+</script>
+<style>
+:root {
+  /* ===== БРЕНД: перекрасить под клиента за 2 минуты ===== */
+  --brand: #0f766e;          /* основной цвет (кнопки, акценты) */
+  --brand-dark: #115e59;
+  --brand-light: #ccfbf1;
+  --text: #1f2937;
+  --text-muted: #6b7280;
+  --bg: #ffffff;
+  --bg-alt: #f8fafc;
+  --radius: 14px;
+  --shadow: 0 4px 24px rgba(15, 118, 110, .10);
+  --font: 'Segoe UI', system-ui, -apple-system, sans-serif;
+}
+* { margin: 0; padding: 0; box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body { font-family: var(--font); color: var(--text); background: var(--bg); line-height: 1.6; }
+img { max-width: 100%; display: block; }
+.container { max-width: 1080px; margin: 0 auto; padding: 0 20px; }
+.btn { display: inline-block; background: var(--brand); color: #fff; padding: 14px 32px; border-radius: var(--radius); text-decoration: none; font-weight: 600; font-size: 16px; border: none; cursor: pointer; transition: background .2s; }
+.btn:hover { background: var(--brand-dark); }
+.btn-outline { background: transparent; color: var(--brand); border: 2px solid var(--brand); padding: 12px 30px; }
+.btn-outline:hover { background: var(--brand-light); }
+
+/* ===== 1. ШАПКА ===== */
+header { position: sticky; top: 0; background: rgba(255,255,255,.96); backdrop-filter: blur(6px); border-bottom: 1px solid #e5e7eb; z-index: 50; }
+.header-inner { display: flex; align-items: center; justify-content: space-between; padding: 14px 0; }
+.logo { font-size: 20px; font-weight: 800; color: var(--brand); text-decoration: none; }
+nav a { color: var(--text); text-decoration: none; margin-left: 22px; font-size: 14px; font-weight: 500; }
+nav a:hover { color: var(--brand); }
+.header-phone { font-weight: 700; text-decoration: none; color: var(--text); }
+
+/* ===== 2. ГЕРОЙ + ОФФЕР ===== */
+.hero { background: linear-gradient(135deg, var(--brand-light), var(--bg-alt)); padding: 70px 0 60px; }
+.hero-grid { display: grid; grid-template-columns: 1.2fr .8fr; gap: 40px; align-items: center; }
+.hero h1 { font-size: 40px; line-height: 1.15; margin-bottom: 16px; }
+.hero h1 span { color: var(--brand); }
+.hero p.lead { font-size: 18px; color: var(--text-muted); margin-bottom: 26px; }
+.hero-cta { display: flex; gap: 14px; flex-wrap: wrap; }
+.hero-badge { display: inline-block; background: #fff; border: 1px solid #e5e7eb; border-radius: 999px; padding: 6px 14px; font-size: 13px; color: var(--text-muted); margin-bottom: 18px; }
+.hero-img { border-radius: var(--radius); box-shadow: var(--shadow); }
+
+/* ===== 3. УСЛУГИ ===== */
+section { padding: 64px 0; }
+.section-title { font-size: 30px; text-align: center; margin-bottom: 10px; }
+.section-sub { text-align: center; color: var(--text-muted); margin-bottom: 40px; }
+.services { display: grid; grid-template-columns: repeat(3, 1fr); gap: 22px; }
+.service { background: var(--bg); border: 1px solid #e5e7eb; border-radius: var(--radius); padding: 26px; transition: box-shadow .2s, transform .2s; }
+.service:hover { box-shadow: var(--shadow); transform: translateY(-3px); }
+.service .icon { width: 46px; height: 46px; border-radius: 10px; background: var(--brand-light); display: flex; align-items: center; justify-content: center; font-size: 22px; margin-bottom: 14px; }
+.service h3 { font-size: 18px; margin-bottom: 8px; }
+.service p { font-size: 14px; color: var(--text-muted); margin-bottom: 12px; }
+.service .price { font-weight: 800; font-size: 20px; color: var(--brand); }
+
+/* ===== 4. ЦЕНЫ ===== */
+.prices { background: var(--bg-alt); }
+.price-table { width: 100%; border-collapse: collapse; background: #fff; border-radius: var(--radius); overflow: hidden; box-shadow: var(--shadow); }
+.price-table th { background: var(--brand); color: #fff; padding: 14px 18px; text-align: left; }
+.price-table td { padding: 13px 18px; border-bottom: 1px solid #f1f5f9; }
+.price-table tr:last-child td { border-bottom: none; }
+.price-table td:last-child { font-weight: 700; text-align: right; color: var(--brand); white-space: nowrap; }
+
+/* ===== 5. ГАЛЕРЕЯ ===== */
+.gallery { display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; }
+.gallery img { border-radius: 10px; aspect-ratio: 1; object-fit: cover; width: 100%; }
+
+/* ===== 6. ОТЗЫВЫ ===== */
+.reviews { background: var(--bg-alt); }
+.review-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 22px; }
+.review { background: #fff; border-radius: var(--radius); padding: 24px; box-shadow: var(--shadow); }
+.review .stars { color: #f59e0b; margin-bottom: 10px; font-size: 17px; }
+.review p { font-size: 14px; margin-bottom: 14px; }
+.review .who { font-weight: 700; font-size: 13px; color: var(--text-muted); }
+.rating-summary { text-align: center; margin-bottom: 34px; }
+.rating-summary b { font-size: 44px; color: var(--brand); }
+
+/* ===== 7. КАРТА + КОНТАКТЫ + ФОРМА ===== */
+.contact-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 30px; }
+.contact-info h3 { margin-bottom: 14px; }
+.contact-line { display: flex; gap: 10px; margin-bottom: 12px; align-items: flex-start; font-size: 15px; }
+.contact-line .ci { flex-shrink: 0; }
+form.lead-form { background: var(--bg-alt); border-radius: var(--radius); padding: 28px; }
+form.lead-form h3 { margin-bottom: 6px; }
+form.lead-form p.sub { font-size: 13px; color: var(--text-muted); margin-bottom: 18px; }
+form.lead-form input, form.lead-form textarea, form.lead-form select { width: 100%; padding: 13px 14px; border: 1px solid #d1d5db; border-radius: 10px; font-size: 15px; font-family: inherit; margin-bottom: 12px; background: #fff; }
+form.lead-form input:focus, form.lead-form textarea:focus { outline: 2px solid var(--brand); border-color: transparent; }
+.map-embed { margin-top: 30px; border-radius: var(--radius); overflow: hidden; box-shadow: var(--shadow); }
+.map-embed iframe { width: 100%; height: 320px; border: 0; display: block; }
+
+/* ===== ФУТЕР ===== */
+footer { background: var(--text); color: #9ca3af; padding: 34px 0; font-size: 13px; }
+.footer-inner { display: flex; justify-content: space-between; gap: 20px; flex-wrap: wrap; }
+footer a { color: #d1d5db; text-decoration: none; }
+
+/* ===== МОБИЛЬНАЯ АДАПТАЦИЯ ===== */
+@media (max-width: 860px) {
+  .hero-grid, .contact-grid { grid-template-columns: 1fr; }
+  .services, .review-grid { grid-template-columns: 1fr; }
+  .gallery { grid-template-columns: repeat(2, 1fr); }
+  .hero h1 { font-size: 30px; }
+  nav { display: none; }
+  .header-phone { font-size: 14px; }
+}
+/* Кнопка звонка для мобильных (фикс) */
+.mobile-call { display: none; position: fixed; bottom: 18px; right: 18px; z-index: 100; background: var(--brand); color: #fff; border-radius: 999px; padding: 15px 22px; text-decoration: none; font-weight: 700; box-shadow: var(--shadow); }
+@media (max-width: 860px) { .mobile-call { display: block; } }
+</style>
+</head>
+<body>
+
+<!-- 1. ШАПКА -->
+<header>
+  <div class="container header-inner">
+    <a class="logo" href="#">Барбершоп «БРИТВА»</a>
+    <nav>
+      <a href="#services">Услуги</a>
+      <a href="#prices">Цены</a>
+      <a href="#gallery">Работы</a>
+      <a href="#reviews">Отзывы</a>
+      <a href="#contacts">Контакты</a>
+    </nav>
+    <a class="header-phone" href="tel:+3752***4567">+375 (29) 123-45-67</a>
+  </div>
+</header>
+
+<!-- 2. ГЕРОЙ -->
+<div class="hero">
+  <div class="container hero-grid">
+    <div>
+      <span class="hero-badge">⭐ 4.9 на Яндекс.Картах · 120+ отзывов</span>
+      <h1>Мужская стрижка за 40 минут. <span>Запись онлайн за 2 минуты</span></h1>
+      <p class="lead">Стрижка и борода от 30 BYN. Работаем ежедневно до 22:00 — успеем после работы. Запись за 2 минуты, без звонков.</p>
+      <div class="hero-cta">
+        <a class="btn" href="#lead-form">Записаться онлайн</a>
+        <a class="btn btn-outline" href="#prices">Посмотреть цены</a>
+      </div>
+    </div>
+    <img class="hero-img" src="hero.jpg" alt="Барбершоп «БРИТВА» — Барбершоп Минск" width="480" height="480">
+  </div>
+</div>
+
+<!-- 3. УСЛУГИ -->
+<section id="services">
+  <div class="container">
+    <h2 class="section-title">Услуги</h2>
+    <p class="section-sub">Стрижём, бреем, укладываем. Кофе — за наш счёт.</p>
+    <div class="services">
+      <div class="service"><div class="icon">✂️</div><h3>Мужская стрижка</h3><p>Стрижка + мытьё + укладка. 40 минут.</p><div class="price">от 30 BYN</div></div>
+      <div class="service"><div class="icon">🧔</div><h3>Оформление бороды</h3><p>Моделирование + контур + уход. 30 минут.</p><div class="price">от 25 BYN</div></div>
+      <div class="service"><div class="icon">💈</div><h3>Комплекс</h3><p>Стрижка + борода. Выгода 15 BYN.</p><div class="price">50 BYN</div></div>
+      <div class="service"><div class="icon">👦</div><h3>Детская стрижка</h3><p>До 10 лет. Терпеливые мастера, мультики.</p><div class="price">25 BYN</div></div>
+      <div class="service"><div class="icon">🪒</div><h3>Королевское бритьё</h3><p>Опасная бритва + горячее полотенце.</p><div class="price">35 BYN</div></div>
+      <div class="service"><div class="icon">🎨</div><h3>Камуфляж седины</h3><p>Естественный цвет за 20 минут.</p><div class="price">30 BYN</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- 4. ЦЕНЫ -->
+<section id="prices" class="prices">
+  <div class="container">
+    <h2 class="section-title">Цены</h2>
+    <p class="section-sub">Финальная стоимость — после осмотра/консультации. Без скрытых доплат.</p>
+    <table class="price-table">
+      <tr><th>Услуга</th><th style="text-align:right">Цена</th></tr>
+      <tr><td>Мужская стрижка</td><td>30–40 BYN</td></tr>
+      <tr><td>Стрижка машинкой</td><td>20 BYN</td></tr>
+      <tr><td>Оформление бороды</td><td>25 BYN</td></tr>
+      <tr><td>Комплекс (стрижка + борода)</td><td>50 BYN</td></tr>
+      <tr><td>Детская стрижка (до 10 лет)</td><td>25 BYN</td></tr>
+      <tr><td>Камуфляж седины</td><td>30 BYN</td></tr>
+    </table>
+  </div>
+</section>
+
+<!-- 5. ГАЛЕРЕЯ -->
+<section id="gallery">
+  <div class="container">
+    <h2 class="section-title">Наши работы</h2>
+    <p class="section-sub">Реальные фото Барбершоп «БРИТВА». Нажмите, чтобы увеличить.</p>
+    <div class="gallery">
+<div style="aspect-ratio:1;border-radius:10px;background:#0f766e;display:flex;align-items:center;justify-content:center;color:#fff;font-weight:600;font-size:14px;text-align:center;padding:10px">Стрижка кроп<br><small style="opacity:.7">(фото клиента)</small></div>
+      <div style="aspect-ratio:1;border-radius:10px;background:#115e59;display:flex;align-items:center;justify-content:center;color:#fff;font-weight:600;font-size:14px;text-align:center;padding:10px">Классика<br><small style="opacity:.7">(фото клиента)</small></div>
+      <div style="aspect-ratio:1;border-radius:10px;background:#134e4a;display:flex;align-items:center;justify-content:center;color:#fff;font-weight:600;font-size:14px;text-align:center;padding:10px">Борода: до/после<br><small style="opacity:.7">(фото клиента)</small></div>
+      <div style="aspect-ratio:1;border-radius:10px;background:#0d9488;display:flex;align-items:center;justify-content:center;color:#fff;font-weight:600;font-size:14px;text-align:center;padding:10px">Фейд<br><small style="opacity:.7">(фото клиента)</small></div>
+      <div style="aspect-ratio:1;border-radius:10px;background:#14b8a6;display:flex;align-items:center;justify-content:center;color:#fff;font-weight:600;font-size:14px;text-align:center;padding:10px">Интерьер<br><small style="opacity:.7">(фото клиента)</small></div>
+      <div style="aspect-ratio:1;border-radius:10px;background:#2dd4bf;display:flex;align-items:center;justify-content:center;color:#fff;font-weight:600;font-size:14px;text-align:center;padding:10px">Детская стрижка<br><small style="opacity:.7">(фото клиента)</small></div>
+      <div style="aspect-ratio:1;border-radius:10px;background:#0f766e;display:flex;align-items:center;justify-content:center;color:#fff;font-weight:600;font-size:14px;text-align:center;padding:10px">Укладка<br><small style="opacity:.7">(фото клиента)</small></div>
+      <div style="aspect-ratio:1;border-radius:10px;background:#115e59;display:flex;align-items:center;justify-content:center;color:#fff;font-weight:600;font-size:14px;text-align:center;padding:10px">Команда<br><small style="opacity:.7">(фото клиента)</small></div>
+      
+    </div>
+  </div>
+</section>
+
+<!-- 6. ОТЗЫВЫ -->
+<section id="reviews" class="reviews">
+  <div class="container">
+    <h2 class="section-title">Отзывы клиентов</h2>
+    <div class="rating-summary"><b>4.9</b><br>средняя оценка на Яндекс.Картах и 2GIS</div>
+    <div class="review-grid">
+      <div class="review"><div class="stars">★★★★★</div><p>«Стригусь здесь полгода. Запись вечером после работы — бесценно. Мастера понимают с полуслова.»</p><div class="who">Андрей, Яндекс.Карты</div></div>
+      <div class="review"><div class="stars">★★★★★</div><p>«Привёл сына — первый раз стригся без слёз. Мастер нашла подход за 5 минут.»</p><div class="who">Сергей, 2GIS</div></div>
+      <div class="review"><div class="stars">★★★★★</div><p>«Борода после оформления — как в рекламе. Плюс кофе и приятная атмосфера.»</p><div class="who">Дмитрий, Яндекс.Карты</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- 7. КОНТАКТЫ + ФОРМА -->
+<section id="contacts">
+  <div class="container">
+    <h2 class="section-title">Записаться</h2>
+    <p class="section-sub">Оставьте заявку — перезвоним в течение 15 минут в рабочее время.</p>
+    <div class="contact-grid">
+      <div class="contact-info">
+        <h3>Барбершоп «БРИТВА»</h3>
+        <div class="contact-line"><span class="ci">📍</span><span>ул. Притыцкого, 34, Минск</span></div>
+        <div class="contact-line"><span class="ci">🕐</span><span>Ежедневно 10:00–22:00 (без выходных)</span></div>
+        <div class="contact-line"><span class="ci">📞</span><a href="tel:+3752***4567">+375 (29) 123-45-67</a></div>
+        <div class="contact-line"><span class="ci">✉️</span><span>hello@britva.by</span></div>
+        <div class="contact-line"><span class="ci">💬</span><span>Telegram / WhatsApp: @britva_minsk</span></div>
+      </div>
+      <!-- Форма: Formspree (50 заявок/мес бесплатно) ИЛИ Supabase + TG-бот -->
+      <form class="lead-form" id="lead-form" action="https://formspree.io/f/XXXXXXX" method="POST">
+        <h3>Заявка на запись</h3>
+        <p class="sub">Это бесплатно и ни к чему не обязывает.</p>
+        <input type="text" name="name" placeholder="Ваше имя" required>
+        <input type="tel" name="phone" placeholder="Телефон" required>
+        <select name="service">
+          <option>Мужская стрижка</option>
+          <option>Оформление бороды</option>
+          <option>Комплекс</option>
+          <option>Детская стрижка</option>
+          <option>Королевское бритьё</option>
+          <option>Камуфляж седины</option>
+        </select>
+        <textarea name="comment" rows="3" placeholder="Комментарий (необязательно)"></textarea>
+        <button class="btn" type="submit" style="width:100%">Отправить заявку</button>
+      </form>
+    </div>
+    <div class="map-embed">
+      <iframe src="https://yandex.ru/map-widget/v1/?text=Минск ул. Притыцкого 34&z=16" loading="lazy"></iframe>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="container footer-inner">
+    <span>© 2026 Барбершоп «БРИТВА» · Барбершоп Минск</span>
+    <span><a href="/privacy.html">Политика конфиденциальности</a></span>
+  </div>
+</footer>
+
+<a class="mobile-call" href="tel:+3752***4567">📞 Позвонить</a>
+
+<!-- Яндекс.Метрика: 00000000 -->
+<script>
+(function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+m[i].l=1*new Date();
+for(var j=0;j<document.scripts.length;j++){if(document.scripts[j].src===r)return;}
+k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+(window,document,"script","https://mc.yandex.ru/metrika/tag.js","ym");
+ym(00000000, "init", {clickmap:true, trackLinks:true, accurateTrackBounce:true, webvisor:true});
+</script>
+</body>
+</html>
